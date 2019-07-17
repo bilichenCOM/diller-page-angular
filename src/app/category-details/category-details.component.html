@@ -1,0 +1,7 @@
+<div *ngIf="category">
+	<h2>{{category.name}}</h2>
+	<div>{{category.description}}</div>
+	<a routerLink="/categories/{{category.id}}/motorcycles">
+		<button class="btn btn-info">Show motorbikes from category</button>
+	</a>
+</div>

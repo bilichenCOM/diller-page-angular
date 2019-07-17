@@ -1,0 +1,8 @@
+<div *ngIf="categories">
+	<h2>Choose your category:</h2>
+	<ul>
+		<li *ngFor="let category of categories">
+			<span>{{category.id}}</span><a routerLink="/categories/{{category.id}}"> {{category.name}}</a>
+		</li>
+	</ul>
+</div>

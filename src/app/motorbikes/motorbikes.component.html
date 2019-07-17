@@ -1,0 +1,13 @@
+<div *ngIf="motorbikes">
+	<h2>Available models:</h2>
+	
+	<table class="table table-striped">
+		<tr *ngFor="let motorbike of motorbikes">
+			<td><img src="{{motorbike.imageUrl}}"></td>
+			<td>{{motorbike.name}}</td>
+			<td>{{motorbike.year}} y.</td>
+			<td>{{motorbike.cc}} cc</td>
+			<td>&#36;{{motorbike.price}}</td>
+		</tr>
+	</table>
+</div>
